@@ -12,13 +12,14 @@ app.use(bodyParser.urlencoded({extended:false}))//buat user kirim data ke server
 app.use(express.static('public'))
 app.use(bearertoken())
 
-const {authRouters} =require('./routers')
+const {authRouters, testRouters } = require('./routers')
 
 app.get('/',(req, res)=>{
     return res.send('<h1>Selamat Datang</h1>')
 })
 
-app.use('/users',authRouters)
+app.use('/users', authRouters)
+app.use('/tester', testRouters)
 
 
 

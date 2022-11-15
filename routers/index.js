@@ -1,9 +1,10 @@
 const authRouters=require('./authrouter')
-// const photoRouters=require('./photorouters')
+const testRouters=require('./testRouter')
 // const movieRouters=require('./movieRouter')
 
 module.exports={
-    authRouters
+    authRouters,
+    testRouters
     // photoRouters,
     // movieRouters
 }

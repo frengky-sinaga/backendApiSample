@@ -1,5 +1,5 @@
-const db = require('./mysqldb')
+// const db = require('./mysqldb')
 
-module.exports={
-    db
-}
+// module.exports={
+//     db
+// }
